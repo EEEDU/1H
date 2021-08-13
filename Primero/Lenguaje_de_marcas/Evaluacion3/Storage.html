@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Variable sessionStorage</title>
+    <script type="application/javascript">
+        window.onload = mostrar;
+
+        function mostrar() {
+            contenido.innerHTML = sessionStorage.length;
+            //Añadir un item
+            sessionStorage.setItem("Antonio", 18);
+            contenido.innerHTML += sessionStorage.length;
+            // Saca el nombre que esta en esa posicion
+            contenido.innerHTML += "<br>" + sessionStorage.key(0);
+            // Saca ele numero del nombre que le pases
+            contenido.innerHTML += "<br>" + sessionStorage.getItem("Antonio");
+            //Igual que setItem
+            sessionStorage["Pedro"] = 20;
+            contenido.innerHTML += "<br>" +  sessionStorage.length;
+            contenido.innerHTML += "<br>" + sessionStorage.key(1);
+            contenido.innerHTML += "<br>" + sessionStorage.getItem("Pedro");
+            // Eliminar un item
+            sessionStorage.removeItem("Antonio");
+            contenido.innerHTML += "<br>" + sessionStorage.length;
+            // El de la posicion 1 pasa a la 0
+            contenido.innerHTML += "<br>" + sessionStorage.key(1);
+            // Limpiar todo
+            sessionStorage.clear();
+            contenido.innerHTML += "<br>" + sessionStorage.length;
+        }
+    </script>
+</head>
+<body>
+    <div id="contenido"></div>
+</body>
+</html>

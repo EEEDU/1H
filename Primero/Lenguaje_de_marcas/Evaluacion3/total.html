@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script language="JavaScript">
+    window.onload = function() {
+      let db = window.openDatabase("shopDatabase", "1.0", "Comentario de DB", 2 * 1024 * 1024);
+      db.transaction(function(tx) {
+        tx.executeSql("CREATE TABLE IF NOT EXISTS products (id unique, name, price)");
+        tx.executeSql("CREATE TABLE IF NOT EXISTS orders (id_product, quantity)");
+        tx.executeSql("SELECT * FROM products", [],function (tx, results){
+          if (results.rows.length  > 0) {
+            let tableString = "";
+            for (let i = 0; i < results.rows.length; i++) {
+              tableString += "<tr>";
+              tableString += "<td>" + results.rows.item(i).name + "</td>";
+              tableString += "<td>" + results.rows.item(i).price + "</td>";
+              tableString += "<td><button type=\"button\" onclick='buy(" + results.rows.item(i).id + ")' class=\"btn btn-success\">Comprar</button></td>";
+              tableString += "</tr>";
+            }
+            document.getElementById("shopContent").innerHTML = tableString;
+            showOrders();
+          } else {
+            tx.executeSql("INSERT INTO products VALUES (1, 'apple', 100), (2, 'microsoft', 75), (3, 'pbell', 10), (4, 'dell', 25), (5, 'toshiba', 5)");
+            showOrders();
+          }
+        })
+      });
+    };
+
+    function buy (id) {
+      let db = window.openDatabase("shopDatabase", "1.0", "Comentario de DB", 2 * 1024 * 1024);
+      db.transaction(function(tx) {
+        tx.executeSql("SELECT * FROM orders WHERE id_product = ?", [id], function(tx, results) {
+          if (results.rows.length > 0) {
+            tx.executeSql("UPDATE orders SET quantity = quantity + 1 WHERE id_product = ?", [id], function() {
+              showOrders();
+            });
+          } else {
+            tx.executeSql("INSERT INTO orders VALUES (?, ?)", [id, 1], () => {
+              showOrders();
+            });
+          }
+        });
+      });
+    };
+
+    function showOrders () {
+      let db = window.openDatabase("shopDatabase", "1.0", "Comentario de DB", 2 * 1024 * 1024);
+      db.transaction(function(tx) {
+        tx.executeSql("SELECT id, name, quantity, price FROM products, orders WHERE id_product = id", [], function(tx, results) {
+          if (results.rows.length > 0) {
+            let tableString = "";
+            let total = 0;
+            for (let i = 0; i < results.rows.length; i++) {
+              tableString += "<tr>";
+              tableString += "<td>" + results.rows.item(i).name + "</td>";
+              tableString += "<td>" + results.rows.item(i).quantity + "</td>";
+              tableString += "<td><button type=\"button\" onclick='remove("  + results.rows.item(i).id + ")' class=\"btn btn-danger\">Eliminar</button></td>";
+              tableString += "</tr>";
+              total += results.rows.item(i).quantity * results.rows.item(i).price;
+            }
+            document.getElementById("total").innerText = "Total: " + total + " €";
+            document.getElementById("cartContent").innerHTML = tableString;
+          } else {
+            let emptyString = "<div><h3>El carrito está vacío</h3></div>";
+            document.getElementById("cartContent").innerHTML = emptyString;
+            document.getElementById("total").innerHTML = "";
+          }
+        });
+      });
+    };
+
+    function remove (id) {
+      let db = window.openDatabase("shopDatabase", "1.0", "Comentario de DB", 2 * 1024 * 1024);
+      db.transaction(function(tx) {
+        tx.executeSql("SELECT * FROM orders WHERE id_product = ?", [id], function(tx, results) {
+          if (results.rows.item(0).quantity - 1 > 0) {
+            tx.executeSql("UPDATE orders SET quantity = quantity - 1 WHERE id_product = ?", [id], function() {
+              showOrders();
+            });
+          } else {
+            tx.executeSql("DELETE FROM orders WHERE id_product = ?", [id], function() {
+              showOrders();
+            });
+          }
+        });
+      });
+    }
+
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Productos</h1>
+    <div class="row">
+      <div class="col">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Producto</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Comprar</th>
+            </tr>
+          </thead>
+          <tbody id="shopContent">
+            
+          </tbody>
+        </table>
+      </div>
+      <div class="col">
+        <h1>Carrito</h1>
+        <table class="table table-striped">
+          <caption id="total"></caption>
+          <thead>
+          <tr>
+            <th scope="col">Producto</th>
+            <th scope="col">Cantidad</th>
+          </tr>
+          </thead>
+          <tbody id="cartContent">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

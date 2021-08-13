@@ -1,0 +1,50 @@
+<!-- Crea dos tablas que se relacionen entre sí. Una de Alumnos con los campos id_alumno, nombre, otra de Notas con los campos id_alumno, nota.
+     Finalmente crea una tercera tabla que se llame Resultado que muestre si el alumno es apto o no apto en función de su nota. -->
+
+<html>
+<head><title>Cruce de tablas</title><meta charset="utf-8">
+<script language="JavaScript">
+    function crearTabla(){
+        var db = openDatabase("1H-DB", "1.0", "Comentarios sobre BD", 2*1024*1024);
+        db.transaction(function(tx){
+            tx.executeSql("DROP TABLE IF EXISTS ALUMNOS");
+            tx.executeSql("DROP TABLE IF EXISTS NOTAS");
+            tx.executeSql("DROP TABLE IF EXISTS RESULTADOS");
+
+            tx.executeSql("CREATE TABLE IF NOT EXISTS ALUMNOS(id_alumno, nombre)");
+            tx.executeSql("CREATE TABLE IF NOT EXISTS NOTAS(id_alumno, nota)");
+            tx.executeSql("CREATE TABLE IF NOT EXISTS RESULTADOS(id_alumno, calificacion)");
+
+            tx.executeSql("INSERT INTO ALUMNOS(id_alumno, nombre) VALUES(1, 'Sandra <3')");
+            tx.executeSql("INSERT INTO NOTAS(id_alumno, nota) VALUES(1, 10)");
+            tx.executeSql("INSERT INTO ALUMNOS(id_alumno, nombre) VALUES(2, 'El Siniestro')");
+            tx.executeSql("INSERT INTO NOTAS(id_alumno, nota) VALUES(2, 1)");
+            tx.executeSql("INSERT INTO ALUMNOS(id_alumno, nombre) VALUES(3, 'DjCascos')");
+            tx.executeSql("INSERT INTO NOTAS(id_alumno, nota) VALUES(8, -5)");
+        });
+    }
+
+    function consulta(){
+        var db = openDatabase("1H-DB", "1.0", "Comentarios sobre BD", 2*1024*1024);
+        db.transaction(function(tx){
+            tx.executeSql("SELECT n.* FROM ALUMNOS as a, NOTAS as n WHERE a.id_alumno = n.id_alumno", [], function (tx, resultados){
+                var len = resultados.rows.length;
+                msg = "<p>Notas</p>";
+                for(i=0; i<len; i++){
+                    if(resultados.rows.item(i).nota >= 5)
+                        tx.executeSql("INSERT INTO RESULTADOS(id_alumno, calificacion) VALUES("+ resultados.rows.item(i).id_alumno +", 'Apto')");
+                    else
+                        tx.executeSql("INSERT INTO RESULTADOS(id_alumno, calificacion) VALUES("+ resultados.rows.item(i).id_alumno +", 'No Apto')");
+                    msg += "<p>"+ resultados.rows.item(i).nota + "</p>";
+                }
+                state.innerHTML = msg;
+            });
+        });
+    }
+</script>
+</head>
+<body onload="crearTabla()">
+    <div id="state" name="state"></div>
+    <input type="button" value="Join" onclick="consulta()">
+</body>
+</html>

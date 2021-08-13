@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Editor con HTML5 Y JavaScript</title>
+        <link rel="stylesheet" href="../Estilos/Ejercicio03.css">
+        <script language="JavaScript" src="../Funciones/Ejercicio03.js"></script>
+    </head>
+    <body>
+        <div id="principal">
+            <h2>Mensajes publicados</h2>
+            <div id="mensajes"></div>
+            <div id="editor">
+                <h3>Publica aquí tu mensaje</h3>
+                <div id="botones">
+                    <img src="../Imagenes/iconos/negrita.jpg" class="boton" onclick="negrita()">
+                    <img src="../Imagenes/iconos/cursiva.jpg" class="boton" onclick="cursiva()">
+                    <img src="../Imagenes/iconos/subrayado.jpg" class="boton" onclick="subrayado()">
+                    <img src="../Imagenes/iconos/alini.jpg" class="boton" onclick="alineai()">
+                    <img src="../Imagenes/iconos/alinc.jpg" class="boton" onclick="alineac()">
+                    <img src="../Imagenes/iconos/alind.jpg" class="boton" onclick="alinead()">
+                    <img src="../Imagenes/iconos/alinf.jpg" class="boton" onclick="alineaf()">
+                    <img src="../Imagenes/iconos/lno.jpg" class="boton" onclick="listaNoOrdenada()">
+                    <img src="../Imagenes/iconos/lor.jpg" class="boton" onclick="listaOrdenada()">
+                    <img src="../Imagenes/iconos/subi.jpg" class="boton" onclick="subi()">
+                    <img src="../Imagenes/iconos/supi.jpg" class="boton" onclick="supi()">
+                    <img src="../Imagenes/iconos/fco.jpg" class="boton" onclick="fontColor()">
+                    <img src="../Imagenes/iconos/bco.jpg" class="boton" onclick="backColor()">
+                    <img src="../Imagenes/iconos/imagen.jpg" class="boton" onclick="insertarImg()">
+                    <img src="../Imagenes/iconos/hipervinculo.jpg" class="boton" onclick="hipervinculo ()">
+                </div>
+                <div id="contenido" contenteditable="true"></div>
+                <input type="button" value="PUBLICAR" onclick="publicar()">
+            </div>
+        </div>
+    </body>
+</html>
