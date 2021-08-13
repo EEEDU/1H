@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>Trabajando con formulario</title>
+</head>
+<body>
+	<h1 align="center">Mi primer formulario</h1>
+	<!--La propiedad action del form esta vinculada con el input de type submit method es el metodo de enviar el formulario-->
+	<!--<input type=text(para añadir un texto); type=radio(elegir una de las opciones); type=checkbox(elegir mas de una opción); 
+		type=reset(resetear la pagina); type=sebmit(enviar formulario) type=button(boton) type=date(fecha)>-->
+	<form action="cargar.php" method="post"> 
+		<table align="center" border="1" cellpadding="5">
+				<tr>
+					<td align="right">Introduce tu nombre: </td>
+					<td><input type="text" size="50" maxlength="20" id="nombre" name="nombre"></td>
+				</tr>
+				<tr>
+					<td align="right">Introduce tu provincia: </td>
+					<td>
+						<!--<select>=para seleccionar una de las opciones; <option>=poner las opciones-->
+						<select>
+							<option value="46">Teruel</option>
+							<option value="50" selected>Zaragoza</option>
+							<option value="54">Huesca</option>
+						</select>
+					</td>
+				<tr>
+					<td align="right">Introduce tu edad: </td>
+					<td>Mayor de 60 <input type="radio" name="edad" value="1">
+					Entere 20 y 60 <input type="radio" name="edad" value="2">
+					Menor de 20 <input type="radio" name="edad" value="3"></td>
+				</tr>
+				<tr>
+					<td align="right">Introduce tu deporte favorito: </td>
+					<td>Baloncesto <input type="checkbox" name="deporte" value="1">
+					Futbol <input type="checkbox" name="deporte" value="2">
+					Balomano <input type="checkbox" name="deporte" value="3"></td>
+				</tr>
+				<tr>
+					<td align="right">Introduce algun comentario: </td>
+					<td><textarea name="comentario" cols="40" row="40">Escribe algun comentario.</textarea></td>
+				</tr>
+				<tr>
+					<td><input type="reset" value="Borrar"></td>
+					<td><input type="submit" name="Enviar"></td>
+				</tr>
+		</table>
+	</form>
+</body>
+</html>

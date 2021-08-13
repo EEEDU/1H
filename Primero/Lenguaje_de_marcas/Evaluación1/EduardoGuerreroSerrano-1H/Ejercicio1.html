@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Ejercicio 1 del examen: ahorrar</title>
+    <style type="text/css">
+        img{position: absolute};
+        h1{margin-left: 0.25in; color: navy; font-size: 24pt};
+    </style>
+    <script language = "JavaScript">
+    puntero = null; 
+    var contador = 0;
+    function cargar(){
+        if(event.srcElement.className == "movil"){
+            puntero = event.srcElement;
+        }
+    }
+    function mover(){
+        if(puntero != null){
+            puntero.style.left = event.x - 75;
+            puntero.style.top = event.y - 75;    
+        }        
+        
+    }
+    function soltar(){
+        if(!(((parseInt(puntero.style.left) + puntero.width) < parseInt(hucha.style.left)) ||
+        (parseInt(puntero.style.left) > (parseInt(hucha.style.left) + hucha.width)) ||
+        (parseInt(puntero.style.top) + puntero.height) < (parseInt(hucha.style.top)) ||
+        (parseInt(puntero.style.top) > (parseInt(hucha.style.top) + hucha.height)))){
+            puntero.style.display = "none";
+            contador++;
+            document.getElementById('contador').innerHTML = contador + "€";
+        }
+        puntero = null;
+    }
+    </script>
+</head>
+<body onmousedown="cargar()" onmousemove="mover(); return false" onmouseup="soltar()">
+    <img src="imagenes/moneda.png" class="movil" height="150" width="150" style="top: 50; left: 50">
+    <img src="imagenes/moneda.png" class="movil" height="150" width="150" style="top: 50; left: 350">
+    <img src="imagenes/moneda.png" class="movil" height="150" width="150" style="left: 650; top: 50">
+    <img src="imagenes/moneda.png" class="movil" height="150" width="150" style="left: 950; top: 50">
+    <img src="imagenes/moneda.png" class="movil" height="150" width="150" style="left: 1250; top: 50">     
+    <img src="imagenes/hucha.png" id="hucha" height="250" width="250"style="left: 650; top: 400">
+    <h1 id="contador" style="text-align: center; font-size: 50pt; margin-top: 250">0€</h1>  
+</body>
+</html>

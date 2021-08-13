@@ -1,0 +1,35 @@
+<html>
+<head>
+	
+	<title>Cambiar clase</title>
+		<style type="text/css">
+		/* position:absolute = para ponerlo donde quieras con top y left */
+			.bloque1{position: absolute; top: 50px; left: 20px; width: 300px; background-color: #9a5656}
+			.bloque2{position: absolute; top: 50px; left: 400px; width: 300px; background-color: #56569a}
+		</style>
+		<script language="JavaScript">
+			function cambiar(){
+				if (b1.className == "bloque1") {
+					b1.className = "bloque2";
+					b2.className = "bloque1";
+				}
+				else{
+					b1.className = "bloque1";
+					b2.className = "bloque2";
+
+				}
+			}
+		</script>
+</head>
+<body>
+	<div id="b1" class="bloque1">
+		<img src="Imagenes/Circulo.png" height="100">
+		Con el Gobierno de la Comunidad de Madrid en pie de guerra, el ministro de Sanidad, Salvador Illa, acude al Congreso para defender la necesidad del estado de alarma en parte de la región para doblegar la curva de la pandemia, medida que este viernes cumplirá una semana. Mientras, en la Asamblea de Madrid la presidenta y el vicepresidente madrileños, Isabel Díaz Ayuso e Ignacio Aguado, darán cuenta de su gestión y de las labores del Grupo Covid-19, respectivamente.
+	</div>
+	<div id="b2" class="bloque2">
+		<img src="Imagenes/Cruz.png" height="100">
+		El Tribunal Superior de Justicia de Madrid ha anulado el nombramiento como funcionarios de carrera de 20 trabajadores, todos ellos vinculados con altos cargos del PSOE y la UGT, del Centro de Iniciativas para la Formación y el Empleo (CIFE) del Ayuntamiento de Fuenlabrada. El tribunal madrileño lo considera «contrario a derecho».
+	</div>
+	<input type="button" value="Intercambio" onclick="cambiar()">
+</body>
+</html>

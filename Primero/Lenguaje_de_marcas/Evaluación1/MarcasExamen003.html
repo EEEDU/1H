@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Días de la semana</title> 
+        <script language="JavaScript">
+            diasSemana = new Array ("lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo");
+            var i = 0;
+            function anterior(){
+                if (i == 0){
+                    i = (diasSemana.length - 1);º
+                } else {
+                    i--;
+                }
+                document.getElementById('dia').innerHTML = diasSemana[i];
+            }
+            function siguiente(){
+                if (i == (diasSemana.length - 1)){
+                    i = 0;
+                } else {
+                    i++;
+                }
+                document.getElementById('dia').innerHTML = diasSemana[i];
+            }
+            document.getElementById('dia').innerHTML = diasSemana[i];
+        </script>
+    </head>
+    <body>
+        <h1 align='center' id=dia>lunes</h1>
+        <center>
+            <input type="button" value="anterior" onclick="anterior()">
+            <input type="button" value="siguiente" onclick="siguiente()">
+        </center>
+    </body>
+</html>

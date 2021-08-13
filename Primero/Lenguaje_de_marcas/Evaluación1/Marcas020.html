@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Reloj digital</title>
+        <script language="JavaScript">
+            function reloj(){
+                var fecha = new Date();
+                var horas = fecha.getHours();
+                var minutos = fecha.getMinutes();
+                var segundos = fecha.getSeconds();
+                var horaStr = "";
+                horaStr += ((horas < 10)?"0":"") + horas;
+                horaStr += ((minutos < 10)?" : 0":" : ") + minutos;
+                horaStr += ((segundos < 10)?" : 0":" : ") + segundos;
+                caja.value = horaStr;   
+                //setTimeout("reloj()", 1000);
+            }
+        </script>
+    </head>
+    <body onload="setInterval('reloj()', 1000)">
+        <h1 align="center">Reloj digital</h1>
+        <center>
+            <input id="caja" size="6">
+        </center>
+    </body>
+</html>
