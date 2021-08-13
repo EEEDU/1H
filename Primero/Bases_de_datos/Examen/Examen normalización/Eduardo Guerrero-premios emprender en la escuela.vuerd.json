@@ -1,0 +1,1594 @@
+{
+  "canvas": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 68.16000366210938,
+    "scrollLeft": 833.280029296875,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": true,
+      "columnPrimaryKey": true,
+      "columnUnique": true,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    }
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "Participante",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_participante",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 87,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "643987f4-c487-f45c-fab4-4e42896496ec"
+          },
+          {
+            "name": "id_centro",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "40f56e46-019a-3430-3173-0b3e185d5ee7"
+          },
+          {
+            "name": "DNI",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "b1018c26-3d84-050a-13e0-1d4b5d4b91f5"
+          },
+          {
+            "name": "nombre",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "5ef124b7-d721-3251-29a9-74fe8d0852d2"
+          },
+          {
+            "name": "dirección",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "b564694f-5412-297b-cb00-de796f3c30b0"
+          },
+          {
+            "name": "teléfono",
+            "comment": "",
+            "dataType": "NUMERIC",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 63,
+              "widthDefault": 60
+            },
+            "id": "9d08b5f9-81c0-f25d-9459-f1b299870ebf"
+          },
+          {
+            "name": "email",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "3831c5f1-6c11-d0ab-cc30-e70c2467e411"
+          },
+          {
+            "name": "otros_datos",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 70,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "10e4ec05-3b88-5a61-5db4-aba7c185a4bc"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 316.00000000000006,
+          "top": 102.40000000000005,
+          "zIndex": 191,
+          "widthName": 71,
+          "widthComment": 60
+        },
+        "id": "5e376189-57ae-254e-92f9-b9fa90598dd7"
+      },
+      {
+        "name": "Profesor",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_participante",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 87,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b4389f56-32ff-df2c-104a-74a91fc4ed2d"
+          },
+          {
+            "name": "id_proyecto",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 69,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "04fc7abf-5f02-dfff-84a4-1bc399c19919"
+          },
+          {
+            "name": "especialidad_técnica",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 123,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "1141af70-cb83-12c1-8c6f-a16a986eb2d8"
+          },
+          {
+            "name": "tiempo_invertido",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 97,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "12e3cfe9-564d-d3ce-4260-0e1f61828132"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 27.999999999999975,
+          "top": 610.4000000000005,
+          "zIndex": 255,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "9dac9731-4b8e-1f73-2dbb-3d18df1a757e"
+      },
+      {
+        "name": "Alumno",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_participante",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 87,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "3eb7b58d-5786-1c5a-76b4-406e92e92aa1"
+          },
+          {
+            "name": "id_proyecto",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 69,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "6db1561b-68e1-ec30-c0da-73ef872702ad"
+          },
+          {
+            "name": "curso_realizando",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 101,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "1ede9616-502f-89d6-6e0d-b53485b2a053"
+          },
+          {
+            "name": "nivel_inglés",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 70,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "1931125c-467d-01b0-6b7d-3b792b4e93c5"
+          },
+          {
+            "name": "tiempo_invertido",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 97,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "21ce9d96-96c9-9c94-7b9a-014c454cdb1f"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 623.9999999999997,
+          "top": 525.5999999999998,
+          "zIndex": 272,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "ff067d38-2211-79b3-6071-47ce5807b63f"
+      },
+      {
+        "name": "Centro",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_centro",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "7d1eecb6-fbe9-64a3-804d-fb3849c250e1"
+          },
+          {
+            "name": "id_provincia",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 72,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f28709dc-01b4-3aea-c9b6-f1701efced67"
+          },
+          {
+            "name": "nombre",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "b8fd5fcc-86d9-abb7-7faa-d49567bb55a8"
+          },
+          {
+            "name": "dirección ",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "d420cafc-632d-ee31-cba9-d72c4ff07eaf"
+          },
+          {
+            "name": "teléfono",
+            "comment": "",
+            "dataType": "NUMERIC",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 63,
+              "widthDefault": 60
+            },
+            "id": "c07b032b-7db3-8fb5-eb69-73f652b38249"
+          },
+          {
+            "name": "email",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "e83288ba-0838-b6b3-2dff-c1551427f5a1"
+          },
+          {
+            "name": "número_alumnos",
+            "comment": "",
+            "dataType": "NUMERIC",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 103,
+              "widthComment": 60,
+              "widthDataType": 63,
+              "widthDefault": 60
+            },
+            "id": "e218226b-b946-9d78-d0fa-1fe81f91305e"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 949.5999877929688,
+          "top": 80.79999999999998,
+          "zIndex": 512,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "5ea0826f-5d76-44ce-d9b6-7247c2515ab6"
+      },
+      {
+        "name": "Provincia",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_provincia",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 72,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "329fff6c-c98c-8de0-122e-04eb54acb563"
+          },
+          {
+            "name": "nombre",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "88b2a6d5-7570-3375-b5ed-11c67359d729"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1452.7999877929688,
+          "top": 268.8000003814697,
+          "zIndex": 451,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "3e9ec1ff-5433-faeb-440a-4585b4089db0"
+      },
+      {
+        "name": "Proyecto",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_proyecto",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "a16d08d2-5ffc-a658-6342-caae5e525b06"
+          },
+          {
+            "name": "id_tribunal",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 62,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "8a9f2540-8a98-5f48-d74f-e3a49469bba8"
+          },
+          {
+            "name": "titulo",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "57b0fa4b-a5b4-5497-bac1-4bcda427a0b8"
+          },
+          {
+            "name": "descripción",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 68,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "477076c3-6df9-218a-e841-f2dc45412213"
+          },
+          {
+            "name": "area_presentación",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 110,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "2aef9767-d2d4-28b9-c2cb-401b99ab85ca"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 528.8000122070315,
+          "top": 826.3999969482419,
+          "zIndex": 307,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "12105369-0849-f292-1f00-ffe4b6aaccb4"
+      },
+      {
+        "name": "Tribunal",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_tribunal",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 62,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "4f31235d-f044-2ae0-09ae-c202bb58b1b9"
+          },
+          {
+            "name": "nombre",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "5557c8f6-0007-9f3f-2084-13dc0859f829"
+          },
+          {
+            "name": "número_componentes",
+            "comment": "",
+            "dataType": "NUMERIC",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 132,
+              "widthComment": 60,
+              "widthDataType": 63,
+              "widthDefault": 60
+            },
+            "id": "9a24698e-0500-4191-0d12-dbc835c3e4a4"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1220.8000244140621,
+          "top": 760.7999999999997,
+          "zIndex": 337,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "48996d47-687e-177c-eff2-3378e1a5b491"
+      },
+      {
+        "name": "Premio",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_premio",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "57cd0031-88fb-995e-ae6c-77215222d024"
+          },
+          {
+            "name": "nombre",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "9b4cafb5-41c9-1f96-177c-ade91c17a4d1"
+          },
+          {
+            "name": "dotación_economica",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 121,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "b9cb6384-7961-47d2-76ae-e14afe7ddb32"
+          },
+          {
+            "name": "persona_entrega",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 100,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "0f807de3-61c7-3839-a07b-15d9707b6775"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1201.5999511718753,
+          "top": 1027.9999999999998,
+          "zIndex": 376,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "b210a5e1-9e73-9a6b-8f34-30903193ba77"
+      },
+      {
+        "name": "Proyecto_premio",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_premio",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "5d86295a-5f73-8ad5-b0ba-bc1756dc9fd9"
+          },
+          {
+            "name": "id_proyecto",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 69,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "a9a193ee-7c46-efb6-9d20-33d1ec0fdf5e"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 689.599975585938,
+          "top": 1117.5999877929687,
+          "zIndex": 314,
+          "widthName": 100,
+          "widthComment": 60
+        },
+        "id": "ba804a57-fe2c-811e-90cd-c5deb198b041"
+      },
+      {
+        "name": "Residencias",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_residencia",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 79,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "038b9470-0b1b-1dd1-b854-a2a30a577683"
+          },
+          {
+            "name": "CIF",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "3b47e83f-008a-ad1e-594b-4f723d18aa28"
+          },
+          {
+            "name": "nombre",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "165d7843-cd5e-524a-0caa-3a62fe78a66e"
+          },
+          {
+            "name": "teléfono",
+            "comment": "",
+            "dataType": "NUMERIC",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 63,
+              "widthDefault": 60
+            },
+            "id": "6de46629-42a2-f284-71f8-7899dc114df9"
+          },
+          {
+            "name": "dirección",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "24f576da-bd3c-931a-073c-a8f662db8789"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1583,
+          "top": 547.9999969482424,
+          "zIndex": 429,
+          "widthName": 73,
+          "widthComment": 60
+        },
+        "id": "135cfd1a-a269-a01b-456f-233ff354c8fe"
+      },
+      {
+        "name": "Participante_residencia",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_participante",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 87,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "4345eafb-b047-8a23-041c-2dc5b30dd442"
+          },
+          {
+            "name": "id_residencia",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 79,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "8c8e9b49-4b65-cba8-9c47-6feedb317c26"
+          },
+          {
+            "name": "fecha_entrada",
+            "comment": "",
+            "dataType": "DATE",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 85,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e42040bd-1f9a-8c0f-d89b-92a361e678f5"
+          },
+          {
+            "name": "fecha_salida",
+            "comment": "",
+            "dataType": "DATE",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 75,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "c9313fd8-4b93-7614-3fc5-aed9bfcde438"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1111.2000122070315,
+          "top": 410.39999389648443,
+          "zIndex": 400,
+          "widthName": 137,
+          "widthComment": 60
+        },
+        "id": "1d9a16f6-47eb-f1f2-5094-150dde930805"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": true,
+        "start": {
+          "tableId": "5e376189-57ae-254e-92f9-b9fa90598dd7",
+          "columnIds": [
+            "643987f4-c487-f45c-fab4-4e42896496ec"
+          ],
+          "x": 422.25000000000006,
+          "y": 335.40000000000003,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "9dac9731-4b8e-1f73-2dbb-3d18df1a757e",
+          "columnIds": [
+            "b4389f56-32ff-df2c-104a-74a91fc4ed2d"
+          ],
+          "x": 489,
+          "y": 648.1500000000005,
+          "direction": "right"
+        },
+        "id": "c6379db1-57bc-2e49-8b83-3c0cbf8d4826",
+        "relationshipType": "ZeroOne"
+      },
+      {
+        "identification": true,
+        "start": {
+          "tableId": "5e376189-57ae-254e-92f9-b9fa90598dd7",
+          "columnIds": [
+            "643987f4-c487-f45c-fab4-4e42896496ec"
+          ],
+          "x": 634.75,
+          "y": 335.40000000000003,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "ff067d38-2211-79b3-6071-47ce5807b63f",
+          "columnIds": [
+            "3eb7b58d-5786-1c5a-76b4-406e92e92aa1"
+          ],
+          "x": 623.9999999999997,
+          "y": 611.3499999999998,
+          "direction": "left"
+        },
+        "id": "07483eea-227b-a0df-29d3-cea87aedc28f",
+        "relationshipType": "ZeroOne"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "5ea0826f-5d76-44ce-d9b6-7247c2515ab6",
+          "columnIds": [
+            "7d1eecb6-fbe9-64a3-804d-fb3849c250e1"
+          ],
+          "x": 949.5999877929688,
+          "y": 187.04999999999998,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "5e376189-57ae-254e-92f9-b9fa90598dd7",
+          "columnIds": [
+            "40f56e46-019a-3430-3173-0b3e185d5ee7"
+          ],
+          "x": 741,
+          "y": 160.65000000000003,
+          "direction": "right"
+        },
+        "id": "e8395f3d-2c50-1935-d9e4-7c11c1fd8dff",
+        "relationshipType": "OneN"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "3e9ec1ff-5433-faeb-440a-4585b4089db0",
+          "columnIds": [
+            "329fff6c-c98c-8de0-122e-04eb54acb563"
+          ],
+          "x": 1452.7999877929688,
+          "y": 323.8000003814697,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "5ea0826f-5d76-44ce-d9b6-7247c2515ab6",
+          "columnIds": [
+            "f28709dc-01b4-3aea-c9b6-f1701efced67"
+          ],
+          "x": 1390.599987792969,
+          "y": 187.04999999999998,
+          "direction": "right"
+        },
+        "id": "7e7a0c38-dbca-bfbb-96fa-cf0f00ede759",
+        "relationshipType": "OneN"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "12105369-0849-f292-1f00-ffe4b6aaccb4",
+          "columnIds": [
+            "a16d08d2-5ffc-a658-6342-caae5e525b06"
+          ],
+          "x": 752.8000122070315,
+          "y": 826.3999969482419,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "ff067d38-2211-79b3-6071-47ce5807b63f",
+          "columnIds": [
+            "6db1561b-68e1-ec30-c0da-73ef872702ad"
+          ],
+          "x": 843.4999999999997,
+          "y": 697.0999999999998,
+          "direction": "bottom"
+        },
+        "id": "7e28340c-daf9-6a23-667f-5b0c1c9054c5",
+        "relationshipType": "OneN"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "12105369-0849-f292-1f00-ffe4b6aaccb4",
+          "columnIds": [
+            "a16d08d2-5ffc-a658-6342-caae5e525b06"
+          ],
+          "x": 528.8000122070315,
+          "y": 912.1499969482419,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "9dac9731-4b8e-1f73-2dbb-3d18df1a757e",
+          "columnIds": [
+            "04fc7abf-5f02-dfff-84a4-1bc399c19919"
+          ],
+          "x": 489,
+          "y": 723.6500000000005,
+          "direction": "right"
+        },
+        "id": "89dc3b24-39af-3935-a660-75043e459517",
+        "relationshipType": "One"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "48996d47-687e-177c-eff2-3378e1a5b491",
+          "columnIds": [
+            "4f31235d-f044-2ae0-09ae-c202bb58b1b9"
+          ],
+          "x": 1220.8000244140621,
+          "y": 826.0499999999997,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "12105369-0849-f292-1f00-ffe4b6aaccb4",
+          "columnIds": [
+            "8a9f2540-8a98-5f48-d74f-e3a49469bba8"
+          ],
+          "x": 976.8000122070315,
+          "y": 912.1499969482419,
+          "direction": "right"
+        },
+        "id": "e71d2247-0ec1-8a25-00dd-67628af01afe",
+        "relationshipType": "OneN"
+      },
+      {
+        "identification": true,
+        "start": {
+          "tableId": "b210a5e1-9e73-9a6b-8f34-30903193ba77",
+          "columnIds": [
+            "57cd0031-88fb-995e-ae6c-77215222d024"
+          ],
+          "x": 1201.5999511718753,
+          "y": 1103.4999999999998,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "ba804a57-fe2c-811e-90cd-c5deb198b041",
+          "columnIds": [
+            "5d86295a-5f73-8ad5-b0ba-bc1756dc9fd9"
+          ],
+          "x": 1092.599975585938,
+          "y": 1172.5999877929687,
+          "direction": "right"
+        },
+        "id": "c25eb441-acee-a68f-3990-b47d909d5f8f",
+        "relationshipType": "ZeroOne"
+      },
+      {
+        "identification": true,
+        "start": {
+          "tableId": "12105369-0849-f292-1f00-ffe4b6aaccb4",
+          "columnIds": [
+            "a16d08d2-5ffc-a658-6342-caae5e525b06"
+          ],
+          "x": 752.8000122070315,
+          "y": 997.8999969482419,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "ba804a57-fe2c-811e-90cd-c5deb198b041",
+          "columnIds": [
+            "a9a193ee-7c46-efb6-9d20-33d1ec0fdf5e"
+          ],
+          "x": 891.099975585938,
+          "y": 1117.5999877929687,
+          "direction": "top"
+        },
+        "id": "95348bb1-7ec1-dad9-0d7f-9b3fa1e7bd4b",
+        "relationshipType": "ZeroOneN"
+      },
+      {
+        "identification": true,
+        "start": {
+          "tableId": "5e376189-57ae-254e-92f9-b9fa90598dd7",
+          "columnIds": [
+            "643987f4-c487-f45c-fab4-4e42896496ec"
+          ],
+          "x": 741,
+          "y": 277.15000000000003,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "1d9a16f6-47eb-f1f2-5094-150dde930805",
+          "columnIds": [
+            "4345eafb-b047-8a23-041c-2dc5b30dd442"
+          ],
+          "x": 1111.2000122070315,
+          "y": 485.89999389648443,
+          "direction": "left"
+        },
+        "id": "174cc665-182c-9de2-07ba-274e91b065a2",
+        "relationshipType": "One"
+      },
+      {
+        "identification": true,
+        "start": {
+          "tableId": "135cfd1a-a269-a01b-456f-233ff354c8fe",
+          "columnIds": [
+            "038b9470-0b1b-1dd1-b854-a2a30a577683"
+          ],
+          "x": 1583,
+          "y": 633.7499969482424,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "1d9a16f6-47eb-f1f2-5094-150dde930805",
+          "columnIds": [
+            "8c8e9b49-4b65-cba8-9c47-6feedb317c26"
+          ],
+          "x": 1532.2000122070315,
+          "y": 485.89999389648443,
+          "direction": "right"
+        },
+        "id": "9aff4cb9-3039-d8d3-9c89-4994e575e34b",
+        "relationshipType": "ZeroOneN"
+      }
+    ]
+  }
+}

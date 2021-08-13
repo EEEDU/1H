@@ -1,0 +1,1209 @@
+{
+  "canvas": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 266.8800048828125,
+    "scrollLeft": 1001.280029296875,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": true,
+      "columnPrimaryKey": true,
+      "columnUnique": true,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    }
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "Rios",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_rios",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "bafcd982-7876-eb6c-49fe-bcb388963d40"
+          },
+          {
+            "name": "id_afluentes",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 72,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "8c67f375-4aa3-7b6c-08af-1f86d2fcf706"
+          },
+          {
+            "name": "id_satelite",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "723de335-3263-14d1-9f4e-975dbf65eba1"
+          },
+          {
+            "name": "nombre",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "53ddfd52-afe7-824f-34c2-af5610681502"
+          },
+          {
+            "name": "descripción",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 68,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "5a002e68-b8d3-2d23-0def-fc81ebbbe5b4"
+          },
+          {
+            "name": "longitud",
+            "comment": "",
+            "dataType": "NUMERIC",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 63,
+              "widthDefault": 60
+            },
+            "id": "1b2c0f0a-a51a-64d6-a1bc-179e1988b6f9"
+          },
+          {
+            "name": "comienzo_monitorización",
+            "comment": "",
+            "dataType": "DATE",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 148,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b2fc8c6f-cc83-9de9-a50b-ec7afa73d2f0"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 187.20000128173834,
+          "top": 125.60000073242192,
+          "zIndex": 544,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "a2667c54-40e1-2697-6214-9bae9bf0d262"
+      },
+      {
+        "name": "Rios_provincias",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_rios",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "4b49a70a-8a3b-85ab-36ef-e6d95d0b0d5a"
+          },
+          {
+            "name": "id_provincia",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 72,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "389d90a4-54f5-b7b2-bb0b-75f6b9a55669"
+          },
+          {
+            "name": "longitud_provincia",
+            "comment": "",
+            "dataType": "NUMERIC",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 107,
+              "widthComment": 60,
+              "widthDataType": 63,
+              "widthDefault": 60
+            },
+            "id": "ed6ab840-b0c3-2668-27dd-cab316601431"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 784.8000000953673,
+          "top": 140.00000000000003,
+          "zIndex": 381,
+          "widthName": 94,
+          "widthComment": 60
+        },
+        "id": "c80bd4f6-a9c1-5231-feae-837d87795955"
+      },
+      {
+        "name": "Provincia",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_provincia",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 72,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "c5e4c851-bead-641a-fb35-aa6d746b5811"
+          },
+          {
+            "name": "nombre",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "8694c798-37c7-8958-bc5e-16eb51ccade4"
+          },
+          {
+            "name": "número_habitantes",
+            "comment": "",
+            "dataType": "NUMERIC",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 113,
+              "widthComment": 60,
+              "widthDataType": 63,
+              "widthDefault": 60
+            },
+            "id": "a658ad66-d8ce-22de-a658-a798f57dfc86"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1361.5999877929692,
+          "top": 80.00000004768371,
+          "zIndex": 465,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "702e1042-6598-04ca-07e0-0cd02c052a74"
+      },
+      {
+        "name": "Sistema_montañoso",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_sistema_montañoso",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 136,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "01123d69-b6ff-350c-206f-5fb141c094a5"
+          },
+          {
+            "name": "nombre",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "962ff4fd-b460-2b76-11e2-0b96a3cdbb9a"
+          },
+          {
+            "name": "orientación",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 66,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "c0f839bb-8aa1-6483-08ae-2f779ea260a2"
+          },
+          {
+            "name": "longitud",
+            "comment": "",
+            "dataType": "NUMERIC",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 63,
+              "widthDefault": 60
+            },
+            "id": "6d22957e-1ded-138a-5b1c-39c5e382f00b"
+          },
+          {
+            "name": "altura_maxima",
+            "comment": "",
+            "dataType": "NUMERIC",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 88,
+              "widthComment": 60,
+              "widthDataType": 63,
+              "widthDefault": 60
+            },
+            "id": "bebfa85e-66c6-71b5-30ed-d962436716c8"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 421.5999999999997,
+          "top": 615.1999984741211,
+          "zIndex": 522,
+          "widthName": 120,
+          "widthComment": 60
+        },
+        "id": "a08ffa6a-b98f-aade-11e4-17f16cc595c6"
+      },
+      {
+        "name": "Montes",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_montes",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 62,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "45c00cc2-3c3b-5522-7113-329426a0fae2"
+          },
+          {
+            "name": "id_sistema_montañoso",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 136,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "bf44f5b9-e857-4638-8953-f5f26c2edb9a"
+          },
+          {
+            "name": "id_satelite",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "dff65649-ad3e-d1ff-3cad-501788d8f9b4"
+          },
+          {
+            "name": "nombre",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "3f16c520-38d0-d29e-1af8-1fbc839fce11"
+          },
+          {
+            "name": "descripción",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 68,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "c2f68fc0-7ab6-9651-5427-611ffec60fcf"
+          },
+          {
+            "name": "altura",
+            "comment": "",
+            "dataType": "NUMERIC",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 63,
+              "widthDefault": 60
+            },
+            "id": "12dcfa94-9d3c-f4c6-37d0-4e80c21556d0"
+          },
+          {
+            "name": "comienzo_monitorización",
+            "comment": "",
+            "dataType": "DATE",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 148,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "cfae5a66-d6f9-29c5-3c70-2d72965a11fe"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1383.2000000000003,
+          "top": 649.5999984741212,
+          "zIndex": 488,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "2c9a2efa-759a-3dfc-973b-ee5651cbe029"
+      },
+      {
+        "name": "Provincia_montes",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_provincia",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 72,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "da76f75a-0ace-c41d-5c6c-4a156af3b5c7"
+          },
+          {
+            "name": "id_montes",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 62,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "dfed8bce-3d0c-48e7-5c43-d5d29d610ef8"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1513.6000020141603,
+          "top": 346.24000026855475,
+          "zIndex": 545,
+          "widthName": 105,
+          "widthComment": 60
+        },
+        "id": "c156cca5-93de-7072-fea3-766156e49f58"
+      },
+      {
+        "name": "Volcanico",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_montes",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 62,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "28af71a5-491b-0e2a-5692-344a44299c6c"
+          },
+          {
+            "name": "tipo_volcan",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 68,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "e0b8bf05-d814-43a1-5a38-caa1d4fd3343"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 940.0000000238425,
+          "top": 986.3999999999992,
+          "zIndex": 507,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "43263ea3-3605-655f-00cc-0a562aede307"
+      },
+      {
+        "name": "Plegamiento",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_montes",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 62,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f14ccbac-2260-7afd-218b-cf988d7592bd"
+          },
+          {
+            "name": "periodo_geologico",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 108,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "7ae89fcb-5d02-d3fd-0e92-32e902f648c1"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1507.3120013623047,
+          "top": 985.1519989453126,
+          "zIndex": 520,
+          "widthName": 74,
+          "widthComment": 60
+        },
+        "id": "89f4df5b-c301-5873-ae01-f304bf5ad3e3"
+      },
+      {
+        "name": "Salite",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_satelite",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f10fa977-75eb-a085-a8db-8999bd3962f3"
+          },
+          {
+            "name": "nombre",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "422da735-3530-b896-1b72-cc1e19d9aa63"
+          },
+          {
+            "name": "descripción",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 68,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "f73c46a4-28fa-41f8-fff1-45e8cf6425b9"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 986.3999999999993,
+          "top": 368.0000030517578,
+          "zIndex": 475,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "4fbcf26f-719e-4092-54c1-e1f27caaf272"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": [
+      {
+        "value": "He hecho una realcion Zero One N en satelite-montes y satelite-rios por que hay satelites que pueden estar rotos y no monitoricen nada.",
+        "id": "ffb3ca37-a627-7c40-9aec-6d131871232d",
+        "ui": {
+          "active": false,
+          "left": 1144.8000000000004,
+          "top": 529.5999938964842,
+          "zIndex": 519,
+          "width": 127,
+          "height": 100
+        }
+      }
+    ]
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": true,
+        "start": {
+          "tableId": "a2667c54-40e1-2697-6214-9bae9bf0d262",
+          "columnIds": [
+            "bafcd982-7876-eb6c-49fe-bcb388963d40"
+          ],
+          "x": 673.2000012817383,
+          "y": 231.8500007324219,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "c80bd4f6-a9c1-5231-feae-837d87795955",
+          "columnIds": [
+            "4b49a70a-8a3b-85ab-36ef-e6d95d0b0d5a"
+          ],
+          "x": 784.8000000953673,
+          "y": 205.25000000000003,
+          "direction": "left"
+        },
+        "id": "c02f11a9-6fa8-e3eb-9a30-9f6cb51301c4",
+        "relationshipType": "OneN"
+      },
+      {
+        "identification": true,
+        "start": {
+          "tableId": "702e1042-6598-04ca-07e0-0cd02c052a74",
+          "columnIds": [
+            "c5e4c851-bead-641a-fb35-aa6d746b5811"
+          ],
+          "x": 1361.5999877929692,
+          "y": 145.25000004768373,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "c80bd4f6-a9c1-5231-feae-837d87795955",
+          "columnIds": [
+            "389d90a4-54f5-b7b2-bb0b-75f6b9a55669"
+          ],
+          "x": 1228.8000000953673,
+          "y": 205.25000000000003,
+          "direction": "right"
+        },
+        "id": "963ed60e-9b30-6503-8e3c-3afbd01046c8",
+        "relationshipType": "ZeroOneN"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "a08ffa6a-b98f-aade-11e4-17f16cc595c6",
+          "columnIds": [
+            "01123d69-b6ff-350c-206f-5fb141c094a5"
+          ],
+          "x": 895.5999999999997,
+          "y": 700.9499984741211,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "2c9a2efa-759a-3dfc-973b-ee5651cbe029",
+          "columnIds": [
+            "bf44f5b9-e857-4638-8953-f5f26c2edb9a"
+          ],
+          "x": 1383.2000000000003,
+          "y": 702.7249984741212,
+          "direction": "left"
+        },
+        "id": "38b3a59d-a487-1cef-07d9-3ad905ea9d62",
+        "relationshipType": "OneN"
+      },
+      {
+        "identification": true,
+        "start": {
+          "tableId": "702e1042-6598-04ca-07e0-0cd02c052a74",
+          "columnIds": [
+            "c5e4c851-bead-641a-fb35-aa6d746b5811"
+          ],
+          "x": 1587.0999877929692,
+          "y": 210.50000004768373,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "c156cca5-93de-7072-fea3-766156e49f58",
+          "columnIds": [
+            "da76f75a-0ace-c41d-5c6c-4a156af3b5c7"
+          ],
+          "x": 1716.6000020141603,
+          "y": 346.24000026855475,
+          "direction": "top"
+        },
+        "id": "17daa0e2-f3bd-589e-a56f-95b228c8f206",
+        "relationshipType": "ZeroOneN"
+      },
+      {
+        "identification": true,
+        "start": {
+          "tableId": "2c9a2efa-759a-3dfc-973b-ee5651cbe029",
+          "columnIds": [
+            "45c00cc2-3c3b-5522-7113-329426a0fae2"
+          ],
+          "x": 1747.7000000000003,
+          "y": 649.5999984741212,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "c156cca5-93de-7072-fea3-766156e49f58",
+          "columnIds": [
+            "dfed8bce-3d0c-48e7-5c43-d5d29d610ef8"
+          ],
+          "x": 1716.6000020141603,
+          "y": 456.24000026855475,
+          "direction": "bottom"
+        },
+        "id": "e108a5f1-f701-5cb8-f962-8083e8758b97",
+        "relationshipType": "OneN"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "4fbcf26f-719e-4092-54c1-e1f27caaf272",
+          "columnIds": [
+            "f10fa977-75eb-a085-a8db-8999bd3962f3"
+          ],
+          "x": 986.3999999999993,
+          "y": 433.2500030517578,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "a2667c54-40e1-2697-6214-9bae9bf0d262",
+          "columnIds": [
+            "723de335-3263-14d1-9f4e-975dbf65eba1"
+          ],
+          "x": 673.2000012817383,
+          "y": 302.6833340657552,
+          "direction": "right"
+        },
+        "id": "ac071433-bafe-c830-4ddb-093c0a45c8dd",
+        "relationshipType": "ZeroOneN"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "4fbcf26f-719e-4092-54c1-e1f27caaf272",
+          "columnIds": [
+            "f10fa977-75eb-a085-a8db-8999bd3962f3"
+          ],
+          "x": 1392.3999999999992,
+          "y": 433.2500030517578,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "2c9a2efa-759a-3dfc-973b-ee5651cbe029",
+          "columnIds": [
+            "dff65649-ad3e-d1ff-3cad-501788d8f9b4"
+          ],
+          "x": 1504.7000000000003,
+          "y": 649.5999984741212,
+          "direction": "top"
+        },
+        "id": "d3b4c87b-2e02-eb24-ab28-ec5afd2a3960",
+        "relationshipType": "ZeroOneN"
+      },
+      {
+        "identification": true,
+        "start": {
+          "tableId": "2c9a2efa-759a-3dfc-973b-ee5651cbe029",
+          "columnIds": [
+            "45c00cc2-3c3b-5522-7113-329426a0fae2"
+          ],
+          "x": 1626.2000000000003,
+          "y": 862.0999984741212,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "89f4df5b-c301-5873-ae01-f304bf5ad3e3",
+          "columnIds": [
+            "f14ccbac-2260-7afd-218b-cf988d7592bd"
+          ],
+          "x": 1730.3120013623047,
+          "y": 985.1519989453126,
+          "direction": "top"
+        },
+        "id": "fc37af56-32f6-9d3d-7980-3d6b27215f4d",
+        "relationshipType": "ZeroOne"
+      },
+      {
+        "identification": true,
+        "start": {
+          "tableId": "2c9a2efa-759a-3dfc-973b-ee5651cbe029",
+          "columnIds": [
+            "45c00cc2-3c3b-5522-7113-329426a0fae2"
+          ],
+          "x": 1383.2000000000003,
+          "y": 808.9749984741212,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "43263ea3-3605-655f-00cc-0a562aede307",
+          "columnIds": [
+            "28af71a5-491b-0e2a-5692-344a44299c6c"
+          ],
+          "x": 1346.0000000238424,
+          "y": 1041.3999999999992,
+          "direction": "right"
+        },
+        "id": "da188753-39c7-4ddf-5f01-358476cf3432",
+        "relationshipType": "ZeroOne"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "a2667c54-40e1-2697-6214-9bae9bf0d262",
+          "columnIds": [
+            "bafcd982-7876-eb6c-49fe-bcb388963d40"
+          ],
+          "x": 653.2000012817383,
+          "y": 125.60000073242192,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "a2667c54-40e1-2697-6214-9bae9bf0d262",
+          "columnIds": [
+            "8c67f375-4aa3-7b6c-08af-1f86d2fcf706"
+          ],
+          "x": 673.2000012817383,
+          "y": 161.0166673990886,
+          "direction": "right"
+        },
+        "id": "704b4edb-c539-f655-62a4-2fc921f9823d",
+        "relationshipType": "ZeroOneN"
+      }
+    ]
+  }
+}
