@@ -1,0 +1,11 @@
+pwd --> Te indica en la carpeta que estas
+clear --> Limpia todo lo de arriba
+cd --> Cambiar directorio
+ls -al --> Mirar fichero
+ls --help --> Ayuda del comando
+cat .bash_history --> Historial de los comandos que he puesto
+cat .bashrc
+mkd (nombre) --> Crear fichero
+touch (nombre) --> Crear texto
+nano (nombre) --> Abrir teto
+ 
