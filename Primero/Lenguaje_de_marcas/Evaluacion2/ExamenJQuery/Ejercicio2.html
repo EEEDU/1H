@@ -1,0 +1,24 @@
+<html>
+<head><title>Visible y oculto</title>
+<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+<script language="JavaScript">
+$(document).ready(function(){
+
+	$(".imagen").click(function(event){
+		$(this).hide(4000, function(){
+			$(this).show(4000);
+		});
+	});
+});
+</script>
+</head>
+<body>
+
+<img src="papelera.jpeg" width=250 class="imagen">
+<br><br>
+<img src="pelota.jpg" width=250 class="imagen">
+<br><br>
+<img src="corazon.jpg" width=250 class="imagen">
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!-- Ejercicio global para el examen de la segunda evaluación -->
+<html>
+    <head>
+        <title>Ejercicio global</title>
+        <!-- Tienes que poner esto y copiar el archivo en la misma carpeta (pongo ../ para que vaya a la carpeta anterior) -->
+        <script type="text/javascript" src="../jquery-3.5.1.js"></script>
+        <!-- Para vincular con otro archivo en la misma carpeta -->
+        <link rel="stylesheet" type="text/css" href="EjercicioGlobal.css"/>      
+        <!-- Aqui pones todo el codigo de JavaScript -->
+        <script language="JavaScript">
+            $(document).ready(function(){ 
+                $("#Boton1").click(function(){
+                    //slideUp --> sube la persiana; 
+                    //slideDown --> baja la persiana;
+                    // slideToogle --> hace lo contrario a como esta
+                    $("#Ejercicio1").slideToggle(2000); 
+                });
+                $("#Ejercicio2").text("Ejercicio2");
+                $("#Boton2").html("<input type = 'button' value = '");
+            });     
+        </script>
+        <!-- 
+            Si quieres poner el codigo css dentro del archivo html
+            <style type="text/css">
+
+            </style> 
+        -->
+    </head>
+    <body>
+        <input id="Boton1" type="button" value="Ejecutar 1">
+        <div id="Ejercicio1"></div>
+        <div id="Boton2"></div>
+    </body>
+</html>
