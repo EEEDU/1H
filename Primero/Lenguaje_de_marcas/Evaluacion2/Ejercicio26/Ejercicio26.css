@@ -1,0 +1,100 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: o;
+}
+li {
+  display: inline-block;
+  padding: 5px;
+  border: 1px outset whitesmoke;
+  background-color: indianred;
+  color: rgb(100, 0, 0);
+  width: 100px;
+  position: relative;
+  margin: -2px;
+  cursor: pointer;
+}
+#menuHorizontal {
+  text-align: center;
+}
+.submenu {
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  display: none;
+  box-shadow: 0px 5px 5px #000;
+  border-radius: 0px 0px 10px 10px;
+  -moz-animation-duration: 0.8s;
+}
+.submenu li:last-child {
+  border-radius: 0px 0px 10px 10px;
+}
+.submenu > li {
+  display: block;
+  -moz-animation-duration: 0.5s;
+}
+.submenu > li:hover {
+  background-color: rgb(175, 45, 45);
+  color: aliceblue;
+  -moz-transform: scale(1.1);
+  border-radius: 5px 5px 5px 5px;
+  text-shadow: 2px 2px 2px #333;
+  z-index: 2;
+  -moz-animation-name: botonsubmenu;
+}
+
+@-moz-keyframes botonsubmenu {
+  0% {
+    text-shadow: 200px 2px 20px #333;
+  }
+  50% {
+    -moz-transform: scale(1.3);
+    border-radius: 5px 5px 5px 5px;
+  }
+  100% {
+    -moz-transform: scale(1.1);
+    text-shadow: 2px 2px 1px #333;
+  }
+}
+
+#menuHorizontal > li:hover {
+  background-color: rgb(160, 30, 30);
+  color: whitesmoke;
+  padding-bottom: 10px;
+  box-shadow: 0px 0px 3px #000;
+  border-radius: 10px 10px 0px 0px;
+  border: 1px outset whitesmoke;
+  text-shadow: 1px 1px 1px #000;
+}
+#menuHorizontal > li:first-child {
+  background-color: rgb(190, 30, 30);
+  color: whitesmoke;
+  padding-bottom: 10px;
+  box-shadow: 0px 0px 3px #000;
+  border-radius: 10px 0px 0px 10px;
+  border: 1px outset whitesmoke;
+  text-shadow: 1px 1px 1px #000;
+}
+#menuHorizontal li:hover ul {
+  display: block;
+  -moz-animation-name: submenu;
+}
+
+/* Especificando a que navegador se aplica */
+@-moz-keyframes submenu {
+  0% {
+    opacity: 0;
+    left: -150px;
+  }
+  50% {
+    -moz-transform: skew(10deg);
+    box-shadow: -10px 4px 8px 5px #000;
+  }
+  100% {
+    opacity: 1;
+    left: 1px;
+  }
+}
+#menuHorizontal > li {
+  -moz-transition: all 0.6;
+}
