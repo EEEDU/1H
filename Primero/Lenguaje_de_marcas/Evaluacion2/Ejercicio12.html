@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Añadir botones</title>
+        <script type="text/javascript" src="jquery-3.5.1.js"></script>
+        <script language="JavaScript">
+            $(document).ready(function(){
+                $("#divAsistente1").append($("<input>").attr("class", "boton").
+                                                        attr("value", "Hola").
+                                                        attr("type", "button"));
+                $("#divAsistente2").append($("<button>").attr("class", "boton").
+                                                         text("probando"));
+            });
+        </script>
+    </head>
+    <body>
+        <div id="divAsistente1"></div>
+        <div id="divAsistente2"></div>
+    </body>
+</html>

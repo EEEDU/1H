@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Evento de teclado</title>
+        <script type="text/javascript" src="jquery-3.5.1.js"></script>
+        <script language="JavaScript">
+            $(document).ready(function(){
+                $("#escribe").keydown(function(event){
+                    $("#parrafo").text("El codigo de la tecla " + String.fromCharCode(event.which) + " es: " + event.which);
+                    $("#escribe").val("");
+                });
+                $("#escribe").keyup(function(event){
+                    $("#parrafo").text("Tecla liberada");
+                });
+            });
+        </script>
+        
+    </head>
+    <body>
+        <p>
+            <input type="text" id="escribe" >
+        </p>
+        <p id="parrafo">
+            El codigo de la tecla es: 
+        </p>
+        </body>
+</html>

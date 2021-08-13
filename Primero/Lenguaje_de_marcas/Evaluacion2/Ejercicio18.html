@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Evento hover</title>
+        <script type="text/javascript" src="jquery-3.5.1.js"></script>
+        <style type="text/css">
+            .primero, .segundo{
+                display: none;
+                padding: 5px;
+                border: 1px solid #ccc;
+                background-color: #f1f1f1;
+                position: relative;
+                width: 200px;
+            }
+
+            #segundo{
+                position: absolute;
+                top: 100px;
+            }
+
+            /* hover solo se puede utilizar para los objetos dentro del evento */
+            #primero:hover .primero{
+                display: block;
+            }
+            #segundo:hover .segundo{
+                display: block
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li id="primero">
+                Mostrar el primer DIV oculto
+                <div class="primero">Contenido del primer DIV</div>
+            </li>
+            <li id="segundo">
+                Mostrar el segundo DIV oculto
+                <div class="segundo">Contenido del segundo DIV</div>
+            </li>
+        </ul>
+    </body>
+</html>
