@@ -1,0 +1,75 @@
+Ejercico practico SIS
+
+	* Definiciones *
+		- Direcciones IP
+		- Protocolos TCP/IP
+		- Configuración minima
+		- Tipos de direcciones IP 
+		- Formas configurar direcciones IP
+	
+	* Introducción *
+		- Tipos de IP
+			> Publica
+			> Privada
+		- Clases IPv4, rangos
+			> Clase A: 1 - 127
+			> Clase B: 128 - 191
+			> Clase C: 192 - 223
+		- CIDR (número de bits destinados a la red)
+			> Clase A: /8
+			> Clase B: /16
+			> Clase C: /24
+		- Mascara de red
+			> Clase A: 255.0.0.0
+			> Clase B: 255.255.0.0
+			> Clase C: 255.255.255.0
+		- Preferencias
+			Mascara de red = CIDR > rangos
+		
+	* Ejercicos practicos *
+		- Clasificar direcciones IP en clases
+		- Mascara de red segun clases
+		- Direcciones IP de redes segun direcciones IP
+			poner octetos destinados a la red normal y los otros poner 0
+		- Direcciones IP de broadcast segun direcciones IP
+			poner octetos destinados a la red normal y los otros poner 255
+		
+		- Estas direcciones IP son validas ?
+			Las que no sean ni direcciones IP de redes ni direcciones IP de broadcast
+		- Con esta dirección IP realizar tres redes diferentes
+		
+		- Número de redes posibles (ejercicio 37)
+			> Clase A: 256 = 2^8
+			> Clase B: 65536 = 2^16
+			> Clase C: 16777216 = 2^24
+		- Número de hosts posibles (ejercicio 37)
+			> Clase A: 254 = 256 - 2
+			> Clase B: 65534 = 65536 - 2
+			> Clase C: 16777214 = 16777216 - 2
+		- Número de bits para red
+		- Número de bits para hosts
+		
+		- Pasar de binario a decimal
+	
+	* Otros * 
+		- ipconfig
+			Mostrar configuración de tarjeta de red
+		- ipconfig/all
+			Mostrar toda la configuración de tarjeta de red
+		- ping
+			Para comprobar que dos hosts se pueden conectar
+		- ifconfig
+			Muestra la configuración de las tarjetas de red
+	
+	* Se puede conectar? *
+		- No porque tienen una mascara diferente y por tanto son de diferente clases
+		- No porque tienen distinto número CIDR
+		- No porque tienen diferente red
+		- No porque tinen el mismo número de host
+		
+	* Si dos ordenadores no se conectan *
+		- Comprobar medios de transmisión.
+		- Comprobar dispositivos de interconexión.
+		- Revisar configuración de la tarjeta de red.
+		- Revisar drivers, funcionamiento de la tarjeta de red.
+		- Revisar el S.O. del PC
