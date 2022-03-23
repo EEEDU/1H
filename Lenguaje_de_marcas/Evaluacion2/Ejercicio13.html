@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Definir un objeto</title>
+        <script type="text/javascript" src="jquery-3.5.1.js"></script>
+        <script language="JavaScript">
+            var imagen = $("<img>", {src:"Imagenes/papelera.png", id:"imagen", 
+                                css:{"padding": "2px", "cursor": "pointer"},
+                                click:function(e){document.location = "Ejercicio12.html"}
+                                });
+            $(document).ready(function(){
+                $("#boton").click(function(){
+                    $("body").append(imagen);
+                });
+            });
+        </script>
+        
+    </head>
+    <body>
+        <input type="button" id="boton" value="Añadir">
+    </body>
+</html>

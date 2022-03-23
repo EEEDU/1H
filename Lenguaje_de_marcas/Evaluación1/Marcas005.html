@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>Creando tablas</title>
+</head>
+<body>
+	<h1 align="center">TABLAS</h1>
+	<!--<table>=tabla; border=borde; cellpadding=espacacio que hay encima del texto; cellspacing=espacio que hay a la izquierda de ltexto-->
+	<table align="center" border="1" bgcolor="orange" width="80%" cellpadding="20" cellspacing="10">
+		<!--<tr>=fila; <th>=celda-->
+		<tr>
+			<th>Columna 1</th><th>Columna 2</th><th>Columna 3</th> <!-- Encabezado por columnas-->
+		</tr>
+		<!--valign=donde quieres que este-->
+		<tr bgcolor="blue" valign="top" height="200">
+			<td>Uno</td><td>Dos</td><td rowspan="2">Tres</td> 
+			<!--rowspan = espandirse en la fila-->
+		</tr>
+		<tr bgcolor="red">
+			<td colspan="2">Cuantro</td>
+			<!--colspan = espandirse en la columna-->
+		</tr>
+		<tr bgcolor="green">
+			<td colspan="3">Cinco</td>
+		</tr>
+	</table>
+	<!--<br>=salto de linea-->
+	<br>
+	<table align="center" border="1" bgcolor="black" width="80%" cellpadding="30">
+		<tr bgcolor="red">
+			<td rowspan="3">Uno</td><td>Dos</td><td>Tres</td>
+		</tr>
+		<tr bgcolor="blue">
+			<td colspan="2">Cuatro</td>
+		</tr>
+		<tr bgcolor="yellow">
+			<td>Cinco</td><td>Seis</td>
+		</tr>
+	</table>
+	<table align="center" border="2" width="80%" cellpadding="10">
+		<tr bgcolor="red">
+			<td>Uno</td><td rowspan=2>Dos</td><td>Tres</td>
+		</tr>
+		<tr bgcolor="pink">
+			<td>Cuatro</td><td>Cinco</td>
+		</tr>
+		<tr bgcolor="purple">
+			<td>Seis</td><td colspan="2">Siete</td>
+		</tr>
+	</table>
+</body>
+</html>

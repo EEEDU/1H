@@ -1,0 +1,77 @@
+#web {
+  width: 960px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px slategray;
+  border-radius: 20px;
+}
+header {
+  padding: 1px;
+  background-color: rgb(151, 189, 228);
+  text-align: center;
+  color: snow;
+  border-radius: 20px 20px 0px 0px;
+}
+nav {
+  background-color: rgb(144, 170, 170);
+  text-align: center;
+  padding: 2px;
+}
+nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+  width: 150px;
+  background-color: rgb(101, 138, 138);
+  border: 2px outset rgb(73, 119, 119);
+  cursor: pointer;
+  padding: 2px;
+  color: snow;
+}
+#contenido {
+  background-color: rgb(222, 230, 236);
+  min-height: 450px;
+  padding: 1%;
+  width: 78%;
+  float: left;
+}
+#contenido section {
+  width: 35%;
+  float: left;
+  padding: 4%;
+  border: 1px dashed teal;
+  margin-left: 40px;
+}
+#contenido section article div {
+  height: 100px;
+  overflow: auto;
+}
+article {
+  text-align: justify;
+}
+article > div {
+  padding: 5px;
+}
+aside {
+  background-color: rgb(165, 173, 236);
+  min-height: 490px;
+  width: 18%;
+  padding: 1%;
+  float: right;
+}
+aside section {
+  text-align: center;
+  margin: 20px;
+  border-radius: 50px;
+  min-height: 150px;
+  border-color: snow;
+}
+footer {
+  background-color: rgb(151, 189, 228);
+  color: snow;
+  text-align: center;
+  padding: 7px;
+  border-radius: 0px 0px 20px 20px;
+}

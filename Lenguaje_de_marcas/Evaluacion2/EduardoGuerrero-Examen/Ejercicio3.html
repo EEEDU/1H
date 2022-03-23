@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Ejercicio 3</title>
+        <script type="text/javascript" src="jquery-3.5.1.js"></script>
+        <script language="JavaScript">
+            $(document).ready(function(){
+                //si haces click en la imagen
+                $("img").on("click", function(){
+                    //this hace referencia en este caso a la imagen que hemos hecho click
+                    //se cambia el stilo (style), transforma la rotacion del eje Y a 0
+                    this.style.transform="rotateY(0deg)";
+                    //se cambia la opacidad a 1
+                    $(this).animate({opacity: '1'});
+                });
+            });
+        </script>
+        <style>
+            img{
+                transform: rotateY(180deg);
+                opacity: 0.5;
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="galeria">
+            <li>
+                <img src="imagenes/1.png" width="100px">
+            </li>
+            <li>
+                <img src="imagenes/cerilla.png" width="100px">
+            </li>
+            <li>
+                <img src="imagenes/leon.png" width="100px">
+            </li>
+            <li>
+                <img src="imagenes/hucha.png" width="100px">
+            </li>
+        </ul>
+    </body>
+</html>
+
+<!-- cuatro imagenes invertidas y con 0.5 de opacidad , haces click se pone bien y con la opacidad 1 
+no id -->

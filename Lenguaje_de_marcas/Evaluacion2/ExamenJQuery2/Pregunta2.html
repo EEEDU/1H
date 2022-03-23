@@ -1,0 +1,31 @@
+<html>
+<head><title>Cuánto rato pulsas</title>
+<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+<script language="JavaScript">
+var cuanto=0;
+$(document).ready(function(){
+	$("body").on("keydown", function(){
+		cuanto+=10;
+	});
+	$("body").on("keyup", function(){
+		$("#divAnimado1").animate({marginLeft:cuanto}, 1500);
+	});
+
+});
+</script>
+<style>
+#divAnimado1{
+	width: 150px;
+	height: 150px;
+	margin-left: 0px;
+	margin-top: 50px;
+	background-color: #0000FF;
+}
+</style>
+</head>
+<body>
+
+<div id="divAnimado1"></div>
+
+</body>
+</html>

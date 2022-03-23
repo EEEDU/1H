@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>De 100 a 50</title>
+        <script language="JavaScript">
+            var numero = 100;
+            function cuentaAtras (){
+                caja.value = numero--;
+                if(numero >= 50){
+                    setTimeout("cuentaAtras()", 100);
+                }
+            }
+        </script>
+    </head>
+    <body onload="cuentaAtras()">
+        <h1 align="center">De 100 a 50</h1>
+        <center>
+            <input id="caja" size="1">
+        </center>
+    </body>
+</html>

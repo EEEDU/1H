@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Parar animacion</title>
+        <script type="text/javascript" src="jquery-3.5.1.js"></script>
+        <script language="JavaScript">
+            $(document).ready(function(){
+                $("#divAnimado1").animate({marginLeft: '600px'}, 1500);
+                $("#divAnimado2").animate({width: '200px', height: '200px'});
+                $("#divAnimado3").animate({marginLeft: '600px', width: '200px', height: '200px'})
+                                 .animate({width: '10px', height: '10px'}, 2000);
+            });
+        </script>
+        <style  type="text/css">
+            #divAnimado1, #divAnimado2, #divAnimado3{
+                width: 150px;
+                height: 150px;
+                margin-left: 50px;
+                margin-top: 50px;
+                background-color: #0000ff;
+            }
+            #divAnimado2{
+                background-color: #ff0000;
+            }
+            #divAnimado3{
+                background-color: #00ff00;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="divAnimado1"></div>
+        <div id="divAnimado2"></div>
+        <div id="divAnimado3"></div>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tienda online</title>
+        <!-- Vamos a usar la variable sessionStorage -->
+        <link rel="stylesheet" href="Estilos/Ejercicio04.css" type="text/css">
+        <script type="application/javascript" src="Funciones/InsertarSQLite.js"></script>
+    </head>
+    <body onload="cargar()">
+        <div id="principal">
+            <h1>TIENDA ONLINE</h1>
+            <div id="productos">
+                <table>
+                    <tr>
+                        <th>IMAGEN</th>
+                        <th>DESCRIPCIÓN</th>
+                        <th>COMPRAR</th>
+                    </tr>
+                    <tr>
+                        <td><img src="Imagenes/iconos2/acer.jpg" class="articulo"></td>
+                        <td><span id="pc1"><h3>Ordenador Acer</h3></span></td>
+                        <td><input type="button" value="COMPRAR" onclick="almacenar('Acer')"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="Imagenes/iconos2/apple.jpg" class="articulo"></td>  
+                        <td><span id="pc2"><h3>Ordenador Apple</h3></span></td>
+                        <td><input type="button" value="COMPRAR" onclick="almacenar('Apple')"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="Imagenes/iconos2/dell.jpg" class="articulo"></td>
+                        <td><span id="pc3"><h3>Ordenador Dell</h3></span></td>
+                        <td><input type="button" value="COMPRAR" onclick="almacenar('Dell')"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="Imagenes/iconos2/pb.jpg" class="articulo"></td>
+                        <td><span id="pc4"><h3>Ordenador pb</h3></span></td>
+                        <td><input type="button" value="COMPRAR" onclick="almacenar('Pb')"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="Imagenes/iconos2/sony.jpg" class="articulo"></td>
+                        <td><span id="pc5"><h3> Ordenador Sony</h3></span></td>
+                        <td><input type="button" value="COMPRAR" onclick="almacenar('Sony')"></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="carrito">
+                <h2>Estado del carrito</h2>
+                <input type="button" value="Limpiar" onclick="limpiar()">
+                <div id="cesta"></div>
+                <div id="total"></div>
+            </div>
+            <div id="pie"></div>
+        </div>
+    </body>
+</html>

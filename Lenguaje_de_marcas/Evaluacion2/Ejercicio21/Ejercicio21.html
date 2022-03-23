@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Estilos y persiana</title>
+        <link rel="stylesheet" href="css\Ejercicio21.css" type="text/css"></link>
+        <script type="text/javascript" src="../jquery-3.5.1.js"></script>
+        <script>
+            $(document).ready(function(event){
+                $(".contenedor div").hide();
+                $(".contenedor div:first").show();
+                $(".contenedor li:first").addClass("activa");
+
+                $("ul.tabs li").on("click", function(){
+                    $("ul.tabs li").removeClass("activa");
+                    $(this).addClass("activa");
+                    $(".contenedor div").hide();
+                    var parrafoActivar = $(this).find("a").attr("href");
+                    $(parrafoActivar).fadeIn();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <table align="center">
+            <tr>
+                <td>
+                    <ul class="tabs">
+                        <li><a href="#tab1">Menu 1</a></li>
+                        <li><a href="#tab2">Menu 2</a></li>
+                        <li><a href="#tab3">Menu 3</a></li>
+                        <li><a href="#tab4">Menu 4</a></li>
+                    </ul>
+                    <div class="contenedor">
+                        <div id="tab1">
+                            Contenido 1
+                        </div>
+                        <div id="tab2">
+                            Contenido 2
+                        </div>
+                        <div id="tab3">
+                            Contenido 3
+                        </div>
+                        <div id="tab4">
+                            Contenido 4
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

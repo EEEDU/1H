@@ -1,0 +1,49 @@
+<html>
+<head><title>Menú Ajax Pestañas</title>
+<link rel="stylesheet" href="pestanas.css" type="text/css">
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js' type="text/javascript"></script>
+<script type="text/JavaScript">
+$(document).ready(function(){
+	$(".contenedor_tab div").hide(); //Ocultamos las capas
+	$("ul.tabs li:first").addClass("activa");
+	$(".contenedor_tab div:first").show();//Mostrar contenido de la primera pestaña
+	$("ul.tabs li").click(function(){
+		$(".contenedor_tab div").slideUp(4000);
+		var x = $(this);
+		setTimeout(function(){
+			$("ul.tabs li").removeClass("activa");
+			x.addClass("activa");
+			$(".contenedor_tab div").hide();
+			var activatab = x.find("a").attr("href");//Lee el valor de href
+			$(activatab).slideDown(4000);
+		}, 4000);
+	});
+});
+
+</script>
+</head>
+<body >
+<table align=center><tr><td>
+	<ul class="tabs">
+		<li><a href="#tab1">Menu 1</a></li>
+		<li><a href="#tab2">Menu 2</a></li>
+		<li><a href="#tab3">Menu 3</a></li>
+		<li><a href="#tab4">Menu 4</a></li>
+	</ul>
+	<div class="contenedor_tab">
+		<div id="tab1">
+			<img width=600 height=500 src="imagenes/1.jpg">
+		</div>
+		<div id="tab2">
+			<img width=600 height=500 src="imagenes/2.jpg">
+		</div>
+		<div id="tab3">
+			<img width=600 height=500 src="imagenes/3.jpg">
+		</div>
+		<div id="tab4">
+			<img width=600 height=500 src="imagenes/4.jpg">
+		</div>
+	</div>
+</td></tr></table>
+</body>
+</html>

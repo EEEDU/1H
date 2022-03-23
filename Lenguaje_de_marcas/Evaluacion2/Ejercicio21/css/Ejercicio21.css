@@ -1,0 +1,53 @@
+ul.tabs {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 32px;
+  width: 600px;
+  margin-top: -7;
+}
+ul.tabs li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  height: 31px;
+  line-height: 31px;
+  border: 1px solid #333;
+  margin-bottom: -1;
+  background-color: #f66;
+  overflow: hidden;
+  position: relative;
+  border-radius: 7px 7px 0px 0px;
+}
+ul.tabs li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  font-size: 20px;
+  padding: 0 20px;
+}
+ul.tabs li a:hover {
+  background-color: #f88;
+}
+.contenedor {
+  float: left;
+  clear: both;
+  width: 600px;
+  height: 500px;
+  border: 1px solid #333;
+  border-radius: 0px 7px 7px 7px;
+  background: linear-gradient(#fff, #ccc);
+}
+li.activa a,
+li.activa a:hover {
+  color: #333;
+  font-weight: bold;
+  background: #f99;
+  border-bottom: 1px solid #ccc;
+}
+
+img {
+  width: 600;
+  height: 500;
+}

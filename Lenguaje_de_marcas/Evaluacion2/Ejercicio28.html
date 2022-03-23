@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Draggable</title> 
+        
+        <link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1/jquery-ui.css"/>      
+        <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="jquery-3.5.1.js"></script>
+        <script language="JavaScript">
+            $(document).ready(function(){ 
+                tope = 0;
+                izquierda = 0;
+                $(".dibujo").draggable({
+                    start:function(event, ui){
+                        tope = ui.position.top;
+                        izquierda = ui.position.left;
+                    },
+                    stop:function(event, ui){
+                        this.style.top = tope;
+                        this.style.left = izquierda
+                    }
+                });
+                    
+            }); 
+        </script>
+        <style type="text/css">
+            .dibujo{
+                position: absolute;
+            }
+            #papelera1{
+                left: 100px;
+                top: 100px;
+            }
+            #papelera2{
+                left: 200px;
+                top: 100px;
+            }
+            #papelera3{
+                left: 300px;
+                top: 100px;
+            }
+            #papelera4{
+                left: 400px;
+                top: 100px;
+            }
+            #papelera5{
+                left: 500px;
+                top: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="papelera1" class="dibujo"><img src="Imagenes/papelera.png" width="100px"></div>
+        <div id="papelera2" class="dibujo"><img src="Imagenes/papelera.png" width="100px"></div>
+        <div id="papelera3" class="dibujo"><img src="Imagenes/papelera.png" width="100px"></div>
+        <div id="papelera4" class="dibujo"><img src="Imagenes/papelera.png" width="100px"></div>
+        <div id="papelera5" class="dibujo"><img src="Imagenes/papelera.png" width="100px"></div>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Canvas final</title>
+        <script type="application/javascript">
+            window.onload = function(){
+                var ctx = canvas.getContext("2d");
+                // elegir color
+                ctx.fillStyle = "rgb(255, 110, 110)";
+                // hacer degradado
+                ctx.fillStyle = "rgb(" + Math.floor(50 + i * 25) + ", " + Math.floor(200 - j * 25) + ", 200)";
+                
+                // hacer degradado de dos color 
+                var gradient = ctx.createLinearGradient(0, 0, 0 , canvas.height / 2);
+                gradient.addColorStop(0, "#f33");
+                gradient.addColorStop(1, "#33f");
+                ctx.fillStyle = gradient;
+                // si quieres hacer un degradado circular
+                var gradient = ctx.createRadialGradient(canvas.width / 4, canvas.height / 4, 0 , canvas.width / 2, canvas.height / 2, canvas.height);
+
+                // Hacer un rectangulo
+                ctx.fillRect(posX, posY, anch, alt);
+
+                // eliminar rectangulo
+                ctx.clearRect(posX, posY, anch, alt);
+
+                // Hacer Path
+                ctx.beginPath();
+                // Indicar donde empiezas 
+                ctx.moveTo(posX, posY);
+                // Hacer una linea 
+                ctx.lineTo(posX, posY);
+
+                // Hacer un arco 
+                ctx.arc(posX, posY, radio, anguloInicio, anguloFinal, haciaDondeGira )    
+                // Cierras path
+                ctx.closePath();
+
+                
+
+                // Pintar
+                ctx.fill();
+                // Dibujar
+                ctx.stroke();
+
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Indica dimensiones del canvas  -->
+        <canvas id="canvas" width="1000px" height="1000px"></canvas>
+    </body>
+</html>

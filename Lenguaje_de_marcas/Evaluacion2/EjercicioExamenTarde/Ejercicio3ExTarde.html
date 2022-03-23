@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Aparece imagenes</title>
+        <script type="text/javascript" src="../jquery-3.5.1.js"></script>
+        <script language="JavaScript">
+            
+            var imagenes = [$("<img>", {src:"../Imagenes/1.png", id:"imagen1", width:"200", height:"150"}) ,
+                            $("<img>", {src:"../Imagenes/2.png", id:"imagen2", width:"200", height:"150"}) ,
+                            $("<img>", {src:"../Imagenes/3.png", id:"imagen3", width:"200", height:"150"})];
+
+            var numero = 0;
+            var sentido = 1;
+
+            $(document).ready(function(){
+
+                setInterval(function(){
+                    if(sentido == 1)
+                        $("body").append(imagenes[numero]);
+                    else
+                        $("#imagen" + numero).remove();
+                    numero += sentido;
+                    if((numero == 3) || (numero == 0))
+                        sentido = -sentido;
+                }, 1000);
+            });
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+<head><title>Desaparecer</title>
+<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+<script language="JavaScript">
+
+$(document).ready(function(){
+	$("img").click(function(event){
+		$(this.id + "desaparece").fadeOut(4000);
+	});
+});
+</script>
+</head>
+<body>
+<table align=center>
+	<tr><td><div id="1desaparece"><img id="#1" src="../imagenes/1.jpg" width=200 height=150></div></td>
+	<td><div id="2desaparece"><img id="#2" src="../imagenes/2.jpg" width=200 height=150></div></td>
+	<td><div id="3desaparece"><img id="#3" src="../imagenes/3.jpg" width=200 height=150></div></td></tr>
+</table>
+</body>
+</html>

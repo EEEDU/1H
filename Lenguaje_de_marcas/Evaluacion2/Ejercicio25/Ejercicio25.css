@@ -1,0 +1,34 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+#menu {
+  width: 200px;
+}
+#menu > li {
+  background-color: tomato;
+  border: 1px outset #333;
+  padding: 5px;
+  position: relative;
+}
+.submenu {
+  position: absolute;
+  top: 0;
+  left: 199px;
+  display: none;
+}
+.submenu > li {
+  background-color: beige;
+  border: 1px outset #333;
+  width: 180px;
+  padding: 2px;
+}
+#menu li:hover {
+  background-color: lightsalmon;
+  color: brown;
+  cursor: pointer;
+}
+#menu li:hover ul {
+  display: block;
+}

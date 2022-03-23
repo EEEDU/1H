@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ejercicio 1 de CANVAS</title>
+    <script type="application/javascript">
+        window.onload = function(){
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "rgb(255, 110, 110)";
+            ctx.fillRect(100, 100, 200, 200);
+            ctx.fillStyle = "rgba(110, 110, 255, 0.5)";
+            ctx.fillRect(150, 150, 200, 200);
+        }
+    </script>
+</head>
+<body>
+    <canvas id="canvas" width="1000px" height="1000px"></canvas>
+</body>
+</html>

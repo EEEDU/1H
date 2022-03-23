@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ejercicio 4 de CANVAS</title>
+    <script type="application/javascript">
+        window.onload = function(){
+            var ctx = canvas.getContext("2d");
+            ctx.beginPath();
+            ctx.moveTo(150, 150);
+            ctx.lineTo(150, 50);
+            ctx.lineTo(50, 150);
+            ctx.closePath();
+            ctx.fill();
+        }
+    </script>
+</head>
+<body>
+    <canvas id="canvas" width="1000px" height="1000px"></canvas>
+</body>
+</html>

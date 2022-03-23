@@ -1,0 +1,38 @@
+version: '3.4'
+
+services:
+  mysql:
+    image: mysql 
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - 3306:3306 
+    environment: 
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=delegado
+      - MYSQL_USER=db_user
+      - MYSQL_PASSWORD=db_password
+      - LANG=C.UTF-8
+    volumes:
+      - mysql_data:/var/lib/mysql 
+      - ./delegado/db:/docker-entrypoint-initdb.d
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin 
+    ports:
+      - 8080:80 
+    environment:
+      - PMA_HOST=mysql 
+    depends_on:
+      - mysql 
+
+  apache:
+    build: ./apache
+    ports:
+      - 80:80
+    volumes:
+      - ./delegado/src:/var/www/html
+    depends_on:
+      - mysql
+
+volumes: 
+  mysql_data: 

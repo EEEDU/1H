@@ -1,0 +1,4 @@
+entras en el datagrip
+en la zona de las tablas
+en la zona de indices
+create new index

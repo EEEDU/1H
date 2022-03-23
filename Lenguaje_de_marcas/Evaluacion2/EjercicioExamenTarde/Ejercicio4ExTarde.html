@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Mover parrafo</title>
+        <script type="text/javascript" src="../jquery-3.5.1.js"></script>
+        <script language="JavaScript">
+            $(document).ready(function(){
+                $("div").mousemove(function(){
+                    $(this).animate({fontSize: '4em'}, "slow");
+                    $(this).animate({fontSize: '1em'}, "slow");
+                    $(this).stop();
+                })
+            });
+        </script>
+        <style>
+            div{
+                position: absolute;  
+            }
+            #letra1{
+                left: 100;
+                top: 100;
+            }
+            #letra2{
+                left: 120;
+                top: 100;
+            }
+            #letra3{
+                left: 140;
+                top: 100;
+            }
+            #letra4{
+                left: 160;
+                top: 100;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="letra1">H</div>
+        <div id="letra2">O</div>
+        <div id="letra3">L</div>
+        <div id="letra4">A</div>
+    </body>
+</html>
